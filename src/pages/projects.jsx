@@ -17,7 +17,7 @@ import dxs from '../assets/featured projects/dxs.png';
 
 export const Projects = () => {
     return (
-        <div class='flex justify-center'>
+        <div class='flex justify-center h-[100vw]'>
             <div id="targetDiv" className=" mb:20 lg:mb-40 max-w-[1150px] ">
                 <div className="grid grid-rows-5 lg:grid-rows-6 grid-cols-1 lg:grid-cols-12 gap-4 z-50">
                 <div className="col-start-1 col-span-1 lg:col-span-6 row-start-1 row-span-1 lg:row-span-3 flex items-center bg-white rounded-2xl transition duration-300 hover:scale-90 hover:rotate-3 max-h-[250px] p-6">

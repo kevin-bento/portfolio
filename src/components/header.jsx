@@ -13,7 +13,7 @@ export const Header = () => {
         navigate("/about");
     }
     const handleHomeClick = () => {
-        navigate("/home")
+        navigate("")
     }
     const handleProjectsClick = () => {
         navigate("/projects")

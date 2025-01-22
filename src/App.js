@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { HashRouter as Router } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 
 import {Home} from './pages/home';
 import {About} from './pages/about';
@@ -10,16 +11,16 @@ import {Footer} from './components/footer';
 
 function App() {
   return (
-   <div class="bg-darkBackground">
-    <BrowserRouter>
+   <div class="bg-darkBackground h-[100%]">
+    <Router>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />}></Route>
+        <Route path="" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </Router>
       
    </div>
   );
